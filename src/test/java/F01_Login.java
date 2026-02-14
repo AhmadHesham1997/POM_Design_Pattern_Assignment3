@@ -1,4 +1,3 @@
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -8,11 +7,11 @@ import org.testng.annotations.Test;
 // Its prefer to put each method that goes to a separate page in a separate class file
 // Page Object Model POM design pattern
 // F01_Login is the test class
-// P01_LoginPage is the page class
+// P02_LoginPage is the page class
 public class F01_Login {
     WebDriver driver;
-    // We create an instance of the P01_LoginPage class to use its methods in our test cases
-    P01_LoginPage loginPage;
+    // We create an instance of the P02_LoginPage class to use its methods in our test cases
+    P02_LoginPage loginPage;
 
     @BeforeMethod
     public void setUp() {
@@ -20,9 +19,9 @@ public class F01_Login {
         driver = new ChromeDriver();
         // Navigate to the main website
         driver.get("https://the-internet.herokuapp.com");
-        // Initialize the login page object where we passed the driver instance to the constructor of P01_LoginPage class to the F01_Login test class
+        // Initialize the login page object where we passed the driver instance to the constructor of P02_LoginPage class to the F01_Login test class
         //so both driver instances are the same and we can use it to interact with the web elements on the page
-        loginPage = new P01_LoginPage(driver);
+        loginPage = new P02_LoginPage(driver);
         // Navigate to the form authentication page
         loginPage.navigateToFormAuthenticationPage();
     }

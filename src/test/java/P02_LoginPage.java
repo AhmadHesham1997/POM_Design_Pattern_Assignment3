@@ -1,8 +1,7 @@
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-public class P01_LoginPage {
+
+public class P02_LoginPage {
     WebDriver driver1;
     //locators
     final private By usernameField = By.id("username");
@@ -15,7 +14,7 @@ public class P01_LoginPage {
     //We create a constructor to initialize the WebDriver instance that will be passed from the test class (F01_Login)
     //this.driver1 = driver; means we are assigning the driver instance passed from the test class to the local driver1 variable
     // in this page class so that we can use it to interact with the web elements on the page
-    public P01_LoginPage(WebDriver driver) {
+    public P02_LoginPage(WebDriver driver) {
         this.driver1 = driver;
     }
 
