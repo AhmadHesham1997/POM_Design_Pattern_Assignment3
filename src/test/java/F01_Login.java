@@ -5,7 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-// Its preferd to put each mehthod that goes to a seperate page in a seprate class file
+// Its prefer to put each method that goes to a separate page in a separate class file
 // Page Object Model POM design pattern
 // F01_Login is the test class
 // P01_LoginPage is the page class
