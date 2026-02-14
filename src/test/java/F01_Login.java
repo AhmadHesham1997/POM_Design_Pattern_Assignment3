@@ -19,7 +19,8 @@ public class F01_Login {
         driver = new ChromeDriver();
         // Navigate to the main website
         driver.get("https://the-internet.herokuapp.com");
-        // Initialize the login page object
+        // Initialize the login page object where we passed the driver instance to the constructor of P01_LoginPage class to the F01_Login test class
+        //so both driver instances are the same and we can use it to interact with the web elements on the page
         loginPage = new P01_LoginPage(driver);
         // Navigate to the form authentication page
         loginPage.navigateToFormAuthenticationPage();
