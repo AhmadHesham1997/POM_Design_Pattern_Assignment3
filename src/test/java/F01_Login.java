@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 // P01_LoginPage is the page class
 public class F01_Login {
     WebDriver driver;
+    // We create an instance of the P01_LoginPage class to use its methods in our test cases
     P01_LoginPage loginPage;
 
     @BeforeMethod
