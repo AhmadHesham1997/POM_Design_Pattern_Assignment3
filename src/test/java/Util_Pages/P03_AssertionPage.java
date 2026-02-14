@@ -12,11 +12,13 @@ public class P03_AssertionPage {
     WebDriver driver1;
     //constructor
     public P03_AssertionPage(WebDriver driver) {
+
         this.driver1 = driver;
     }
     //locators
     //this method is in a separate class called Util Pages.P03_AssertionPage
     // because it is related to the assertion of the login functionality and it is used to assert the valid login scenario
+    //and because we moved to a new page after login, we need to create a new class to handle the assertions related to the new page
     final private By successMessage = By.id("flash");
    public boolean assertValidLogin(){
         return driver1.findElement(successMessage).getText().contains("You logged into a secure area!");

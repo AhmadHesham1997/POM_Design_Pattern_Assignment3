@@ -36,6 +36,7 @@ public class P02_LoginPage {
     //negative scenario
     //this method is in a separate class called Util_Pages.P02_LoginPage
     // because it is related to the login page and it is used to assert the invalid login scenario
+    //we didn't create a separate class for the negative scenario because it is related to the same page and it is used to assert the same element (successMessage) but with different text for the negative scenario
    public boolean assertInvalidLogin(){
         return driver1.findElement(successMessage).getText().contains("Your username is invalid!");
     }

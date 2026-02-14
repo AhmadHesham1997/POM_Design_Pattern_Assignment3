@@ -12,7 +12,10 @@ import org.openqa.selenium.WebDriver;
 public class P01_HomePage {
     WebDriver driver1;
     //locators
+    //this locator is for the form authentication link on the home page
     final private By formAuthenticationLink = By.xpath("//a[text()='Form Authentication']");
+    //this locator is for the dropdown link on the home page
+    final private By dropdownLink = By.xpath("//a[text()='Dropdown']");
     //constructor
     public P01_HomePage(WebDriver driver) {
         this.driver1 = driver;
@@ -22,5 +25,10 @@ public class P01_HomePage {
     // because it is related to the home page and it is used to navigate to the form authentication page
    public void navigateToFormAuthenticationPage() {
         driver1.findElement(formAuthenticationLink).click();
+    }
+    //this method is in a separate class called Util_Pages.P01_HomePage
+    // because it is related to the home page and it is used to navigate to the dropdown page
+    public void navigateToDropdownPage() {
+        driver1.findElement(dropdownLink).click();
     }
 }
