@@ -12,6 +12,7 @@ public class P04_DropdownPage {
     private final By dropdownLink = By.id("dropdown");
     //constructor
     public P04_DropdownPage(WebDriver driver) {
+
         this.driver2 = driver;
     }
     //methods
