@@ -3,6 +3,10 @@
 // The test class includes setup and teardown methods to initialize and close the browser,
 // as well as test methods for both positive and negative login scenarios.
 // The assertions are made using TestNG's Assert class to verify the expected outcomes of the login attempts.
+//We separate the test class (Features.F01_Login) from the page classes (Util_Pages.P01_HomePage, Util_Pages.P02_LoginPage,
+// and Util_Pages.P03_AssertionPage) to keep our code organized and maintainable.
+//and because i move through 3 pages on the website which is the home page, the login page, and the assertion page
+// so it is better to have a separate class for each page to handle the interactions and assertions related to that page.
 package Features;
 
 import Util_Pages.P01_HomePage;
