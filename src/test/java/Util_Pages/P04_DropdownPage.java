@@ -27,7 +27,9 @@ public class P04_DropdownPage {
     }
 
     //Assertion method to verify that the selected option is correct
-    //We didnt create a separate class for the assertion of the dropdown page because it is related to the same page and it is used to assert the same element (dropdown) but with different text for the assertion of the dropdown page
+    //We didnt create a separate class for the assertion of the dropdown page
+    // because it is related to the same page and it is used to assert the same element (dropdown)
+    // but with different text for the assertion of the dropdown page
     public boolean isOptionSelected() {
         return driver2.findElement(By.cssSelector("option[value='Option 2']")).isSelected();
     }

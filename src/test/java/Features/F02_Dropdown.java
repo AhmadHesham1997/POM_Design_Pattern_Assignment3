@@ -35,8 +35,7 @@ public class F02_Dropdown {
         //call the method to select an option from the dropdown
         dropdownPage.selectOptionFromDropdown("Option 2");
         //assert that the selected option is correct
-        boolean isOption2Selected = dropdownPage.isOptionSelected();
-        Assert.assertTrue(isOption2Selected);
+       Assert.assertTrue(dropdownPage.isOptionSelected(), "Option 2 is not selected!");
     }
 
     @AfterMethod
