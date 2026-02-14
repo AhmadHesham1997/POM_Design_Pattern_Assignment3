@@ -12,6 +12,9 @@ public class P01_LoginPage {
     //getting form authentication link by xpath using link text
     final private By formAuthenticationLink = By.xpath("//a[text()='Form Authentication']");
     //constructor
+    //We create a constructor to initialize the WebDriver instance that will be passed from the test class (F01_Login)
+    //this.driver1 = driver; means we are assigning the driver instance passed from the test class to the local driver1 variable
+    // in this page class so that we can use it to interact with the web elements on the page
     public P01_LoginPage(WebDriver driver) {
         this.driver1 = driver;
     }
