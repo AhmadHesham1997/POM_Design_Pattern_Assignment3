@@ -32,6 +32,6 @@ public class P04_DropdownPage {
     // because it is related to the same page and it is used to assert the same element (dropdown)
     // but with different text for the assertion of the dropdown page
     public boolean isOptionSelected() {
-        return driver2.findElement(By.cssSelector("option[value='Option 2']")).isSelected();
+        return driver2.findElement(dropdownLink).getText().contains("Option 2");
     }
 }
