@@ -24,6 +24,7 @@ public class P01_LoginPage {
     }
     //method to perform login action
     //this method should be in a separate class called P02_LoginPage but for simplicity we are keeping it here
+    //We made the method parameterized to accept different username and password for positive and negative scenarios
     void loginTest(String username, String password) {
         //enter username and password and click login button
         driver1.findElement(usernameField).sendKeys(username);
